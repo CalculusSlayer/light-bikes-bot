@@ -15,13 +15,13 @@ def main():
     y = current_player["y"]
 
     # board_len = len()
+    if x > 11:
+        i = -1
+    else:
+        i = 1
 
     while True:
         print(x, y)
-        if x > 11:
-            i = -1
-        else:
-            i = 1
         x += i
         current_move = game.move(game_id, player_id, x, y)
 
